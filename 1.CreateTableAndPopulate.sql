@@ -80,8 +80,7 @@ CREATE TABLE Tickets
     StatutId       INTEGER  NOT NULL REFERENCES dbo.Statuses (Id) ON DELETE CASCADE,
     DateCreation   DATETIME NOT NULL DEFAULT (GETDATE()),
     DateResolution DATETIME NULL,
-    Problem        VARCHAR(MAX
-) NOT NULL,
+    Problem        VARCHAR(MAX) NOT NULL,
     Resolution     VARCHAR(MAX) NULL
 );
 GO
