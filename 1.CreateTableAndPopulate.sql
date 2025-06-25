@@ -1,5 +1,10 @@
-﻿Use
-NexaWorksTicketsDb;
+﻿IF NOT EXISTS(SELECT database_id FROM sys.databases WHERE name = 'NexaWorksTicketsDb')
+    BEGIN
+        CREATE DATABASE NexaWorksTicketsDb
+    END
+GO
+USE NexaWorksTicketsDb
+
 GO
 
 /*
