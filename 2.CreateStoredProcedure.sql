@@ -10,7 +10,7 @@ BEGIN
             SET @statusName = 'Résolu';
         END
 
-    SELECT tickets.Id, tickets.Problem
+    SELECT tickets.Id, tickets.Problem, tickets.Resolution
     FROM dbo.Tickets AS tickets
              LEFT JOIN dbo.Statuses
                        ON Tickets.StatutId = Statuses.Id
@@ -29,7 +29,7 @@ BEGIN
             SET @statusName = 'Résolu';
         END
 
-    SELECT tickets.Id, tickets.Problem
+    SELECT tickets.Id, tickets.Problem, tickets.Resolution
     FROM dbo.Tickets AS tickets
              LEFT JOIN dbo.Products
                        ON tickets.ProductId = dbo.Products.Id
@@ -54,7 +54,7 @@ BEGIN
             SET @statusName = 'Résolu';
         END
     
-    SELECT tickets.Id, tickets.Problem
+    SELECT tickets.Id, tickets.Problem, tickets.Resolution
     FROM dbo.Tickets AS tickets
              LEFT JOIN dbo.Products
                        ON tickets.ProductId = dbo.Products.Id
@@ -141,7 +141,7 @@ BEGIN
             SET @statusName = 'Résolu';
         END
     
-    SELECT tickets.Id, tickets.Problem
+    SELECT tickets.Id, tickets.Problem, tickets.Resolution
     FROM dbo.Tickets AS tickets
              LEFT JOIN dbo.Statuses
                        ON tickets.StatutId = Statuses.Id
@@ -165,7 +165,7 @@ BEGIN
             SET @statusName = 'Résolu';
         END
     
-    SELECT tickets.Id, tickets.Problem
+    SELECT tickets.Id, tickets.Problem, tickets.Resolution
     FROM dbo.Tickets AS tickets
              LEFT JOIN dbo.Statuses
                        ON tickets.StatutId = Statuses.Id
@@ -196,7 +196,7 @@ BEGIN
             SET @statusName = 'Résolu';
         END
 
-    SELECT tickets.Id, tickets.Problem
+    SELECT tickets.Id, tickets.Problem, tickets.Resolution
     FROM dbo.Tickets AS tickets
              LEFT JOIN dbo.Statuses
                        ON tickets.StatutId = Statuses.Id
@@ -231,7 +231,7 @@ BEGIN
             SET @statusName = 'Résolu';
         END
     
-    SELECT tickets.Id, tickets.Problem
+    SELECT tickets.Id, tickets.Problem, tickets.Resolution
     FROM dbo.Tickets AS tickets
              LEFT JOIN dbo.Statuses
                        ON tickets.StatutId = Statuses.Id
@@ -264,7 +264,7 @@ BEGIN
             SET @statusName = 'Résolu';
         END
 
-    SELECT tickets.Id, tickets.Problem
+    SELECT tickets.Id, tickets.Problem, tickets.Resolution
     FROM dbo.Tickets AS tickets
              LEFT JOIN dbo.Statuses
                        ON tickets.StatutId = Statuses.Id
